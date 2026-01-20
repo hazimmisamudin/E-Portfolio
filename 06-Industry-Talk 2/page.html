@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOG_06 | Industry Talk 2: System Development</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --neon: #00f2ff; --bg: #050505; }
+        body { font-family: 'Space Grotesk', sans-serif; background-color: var(--bg); color: #e2e8f0; }
+        .mono { font-family: 'Fira Code', monospace; }
+        .agile-card { background: rgba(0, 242, 255, 0.02); border: 1px solid rgba(0, 242, 255, 0.1); border-left: 4px solid var(--neon); }
+        .glow-text { text-shadow: 0 0 10px rgba(0, 242, 255, 0.5); }
+    </style>
+</head>
+<body class="min-h-screen p-6 md:p-12">
+
+    <nav class="max-w-6xl mx-auto flex justify-between items-center mb-16 border-b border-zinc-900 pb-6">
+        <div class="mono text-[10px] text-cyan-500 tracking-[0.4em]">DATALOG_STREAM // 06</div>
+        <a href="../index.html" class="mono text-[10px] text-zinc-500 hover:text-cyan-400 transition-all uppercase tracking-widest">
+            [ EXIT_TO_MAIN ]
+        </a>
+    </nav>
+
+    <main class="max-w-6xl mx-auto">
+        <header class="mb-16">
+            <h1 class="text-5xl md:text-7xl font-black text-white leading-none mb-6 glow-text uppercase italic">
+                SYSTEM<br><span class="text-cyan-500">DEVELOPMENT</span>
+            </h1>
+            <div class="flex flex-wrap gap-4 mono text-[10px] text-zinc-500 uppercase tracking-widest">
+                <span>// SUBJECT: SECP1513</span>
+                <span>// TOPIC: PROJECT MANAGEMENT & SDLC</span>
+                <span>// STATUS: SECURED</span>
+            </div>
+        </header>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            
+            <div class="lg:col-span-4 space-y-6">
+                <div class="agile-card p-6">
+                    <h2 class="mono text-cyan-400 text-xs font-bold mb-4 uppercase tracking-widest">Speaker_Log</h2>
+                    <p class="text-sm text-zinc-400 leading-relaxed italic">
+                        The speaker described a late realization of System Development's importance, only fully appreciating it after three years in the industry. He highlighted the struggle of bridging the gap between university lessons and real-world SDLC implementation during early job interviews.
+                    </p>
+                </div>
+                
+                <div class="p-6 border border-zinc-900 bg-zinc-950/50">
+                    <h2 class="mono text-zinc-500 text-[10px] font-bold mb-6 uppercase tracking-widest text-center">Full_Documentation</h2>
+                    <a href="Assignment 3 - 01-Industry-Talk 2.pdf" target="_blank" class="block text-center border border-cyan-500 py-4 mono text-xs text-cyan-500 hover:bg-cyan-500 hover:text-black transition-all font-bold">
+                        OPEN_ACADEMIC_REPORT.PDF
+                    </a>
+                </div>
+            </div>
+
+            <div class="lg:col-span-8 space-y-8">
+                <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="p-6 border border-zinc-800">
+                        <h3 class="mono text-white text-[11px] font-bold mb-4 uppercase tracking-widest border-b border-zinc-800 pb-2">Project Management</h3>
+                        <p class="text-[11px] text-zinc-500 leading-relaxed">
+                            The application of knowledge, skills, and techniques to project activities to meet project requirements within time, cost, and scope constraints.
+                        </p>
+                    </div>
+                    <div class="p-6 border border-zinc-800">
+                        <h3 class="mono text-white text-[11px] font-bold mb-4 uppercase tracking-widest border-b border-zinc-800 pb-2">System Development</h3>
+                        <p class="text-[11px] text-zinc-500 leading-relaxed">
+                            A structured process (SDLC) used to plan, create, test, and deploy an information system that meets organizational needs and quality standards.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="agile-card p-8 bg-cyan-500/5">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="h-px flex-1 bg-cyan-500/20"></div>
+                        <h2 class="mono text-cyan-400 text-xs font-bold uppercase tracking-widest">Hazim_Reflective_Log</h2>
+                        <div class="h-px flex-1 bg-cyan-500/20"></div>
+                    </div>
+                    <div class="space-y-6">
+                        <p class="text-sm text-zinc-400 leading-relaxed italic">
+                            "Agile methodologies became essential for creative endeavours. I intend to improve my modelling and animation talents while employing iterative planning to create innovative graphics applications."
+                        </p>
+                        <div class="pt-4 border-t border-zinc-900">
+                            <span class="mono text-[10px] text-zinc-600 uppercase">Outcome_Node: Iterative_Planning_Integration</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="mt-20 py-8 text-center text-zinc-800 mono text-[8px] tracking-[1.5em] uppercase">
+        System_Life_Cycle_Audit // Hazim_Muda // SECP1513
+    </footer>
+
+</body>
+</html>
