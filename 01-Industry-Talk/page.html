@@ -3,74 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOG_01 | Industry Talk</title>
+    <title>LOG_01 | Industry Talk PPG</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
     <style>
         :root { --neon: #00f2ff; --bg: #050505; }
         body { font-family: 'Space Grotesk', sans-serif; background-color: var(--bg); color: #e2e8f0; }
         .mono { font-family: 'Fira Code', monospace; }
-        .cyber-border { border: 1px solid rgba(0, 242, 255, 0.2); }
-        .terminal-header { background: #111; border-bottom: 1px solid #333; }
+        .split-border { border-right: 1px solid rgba(0, 242, 255, 0.1); }
+        .tech-card { background: linear-gradient(145deg, #0a0a0a, #111); border: 1px solid #222; }
     </style>
 </head>
-<body class="min-h-screen p-6">
+<body class="min-h-screen">
 
-    <nav class="max-w-4xl mx-auto flex justify-between items-center py-4 mb-10 border-b border-zinc-900">
-        <span class="mono text-xs text-cyan-500">DECRYPTED_FILE // LOG_01</span>
-        <a href="../index.html" class="mono text-[10px] border border-zinc-700 px-4 py-1 hover:border-cyan-500 transition uppercase tracking-widest">
-            Execute_Return_Home
+    <nav class="p-6 flex justify-between items-center border-b border-zinc-900">
+        <div class="mono text-[10px] text-cyan-500 tracking-[0.4em]">DATALOG_STREAM // 01</div>
+        <a href="../index.html" class="mono text-[10px] text-zinc-500 hover:text-cyan-400 transition-all uppercase tracking-widest">
+            [ EXIT_TO_MAIN ]
         </a>
     </nav>
 
-    <main class="max-w-4xl mx-auto space-y-10">
-        <header>
-            <h1 class="text-4xl font-bold text-white mb-2">Industrial Talk: <span class="text-cyan-400 italic">PPG Infrastructure</span></h1>
-            <p class="mono text-xs text-zinc-500">Subject: Technology & Information System</p>
-        </header>
+    <main class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 min-h-[calc(100vh-80px)]">
+        
+        <div class="p-8 md:p-16 split-border space-y-12">
+            <header>
+                <h1 class="text-6xl font-black text-white leading-none mb-6">INDUSTRY<br><span class="text-cyan-500">TALK_01</span></h1>
+                <p class="mono text-xs text-zinc-500 uppercase tracking-widest">// SUBJECT: TECHNOLOGY & INFORMATION SYSTEM</p>
+                <p class="mono text-xs text-zinc-500 uppercase tracking-widest">// VENDOR: PPG INFRASTRUCTURE</p>
+            </header>
 
-        <div class="cyber-border bg-zinc-950 p-10 text-center">
-            <p class="mono text-[10px] text-zinc-500 mb-6 uppercase tracking-widest">Cloud_Storage_Access</p>
-            <a href="LINK_DRIVE_ANDA" class="inline-block border border-cyan-400 text-cyan-400 px-10 py-4 hover:bg-cyan-400 hover:text-black transition-all font-bold tracking-widest text-sm">
-                OPEN_EXTERNAL_PDF.EXE
-            </a>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <section class="cyber-border bg-zinc-950/50 p-6">
-                <h2 class="mono text-cyan-400 text-xs mb-4">// EXECUTION_SUMMARY</h2>
-                <p class="text-sm text-zinc-400 leading-relaxed">
-                    Overview of PPG as a global leader in paints and coatings. Technical foundation based on multi-cloud architecture including AWS, Azure, and Alibaba Cloud.
-                </p>
-            </section>
-
-            <section class="cyber-border bg-zinc-950/50 p-6">
-                <h2 class="mono text-cyan-400 text-xs mb-4">// KEY_NODES</h2>
-                <ul class="mono text-[10px] space-y-2 text-zinc-300">
-                    <li class="flex items-center gap-2"><span class="text-cyan-500">></span> SAP ERP Modules</li>
-                    <li class="flex items-center gap-2"><span class="text-cyan-500">></span> Data Lake Analytics</li>
-                    <li class="flex items-center gap-2"><span class="text-cyan-500">></span> MLOps Delivery</li>
-                </ul>
-            </section>
-        </div>
-
-        <section class="cyber-border bg-zinc-950/80 p-8">
-            <div class="terminal-header -m-8 mb-6 p-2 flex gap-1.5 px-4">
-                <div class="w-2.5 h-2.5 rounded-full bg-red-500/50"></div>
-                <div class="w-2.5 h-2.5 rounded-full bg-yellow-500/50"></div>
-                <div class="w-2.5 h-2.5 rounded-full bg-green-500/50"></div>
-            </div>
-            <h2 class="mono text-white text-sm mb-4">REFLECTIVE_DATA_LOG:</h2>
-            <div class="space-y-4 text-sm leading-relaxed text-zinc-300 italic">
-                <p>
-                    "<span class="text-cyan-400">What I Gained:</span> Understanding how SAP and advanced analytics drive decision-making. SAP Basis and Basis/ABAP modules handle system architecture."
-                </p>
-                <p>
-                    "<span class="text-cyan-400">Future Impact:</span> Emphasis on prototypes and testing reflects adaptability. Using systematic planning to provide secure solutions."
+            <div class="space-y-6">
+                <h2 class="mono text-cyan-500 text-xs font-bold underline underline-offset-8 decoration-cyan-500/30">EXECUTION_SUMMARY</h2>
+                <p class="text-zinc-400 leading-relaxed text-sm italic">
+                    Overview of PPG as a global leader in paints and coatings. This session focused on their technical foundation based on multi-cloud architecture including AWS, Azure, and Alibaba Cloud.
                 </p>
             </div>
-        </section>
+
+            <div class="pt-8">
+                <a href="Introduction to ppg - industry-Talk.pdf" target="_blank" class="inline-block w-full md:w-auto border-2 border-cyan-500 text-cyan-500 px-12 py-5 mono text-xs hover:bg-cyan-500 hover:text-black transition-all font-bold text-center tracking-widest">
+                    DOWNLOAD_REPORT_LOG.PDF
+                </a>
+            </div>
+        </div>
+
+        <div class="p-8 md:p-16 bg-zinc-950/30 space-y-10">
+            
+            <section class="space-y-6">
+                <h2 class="mono text-white text-xs font-bold tracking-widest">SYSTEM_NODES_IDENTIFIED</h2>
+                <div class="grid grid-cols-1 gap-4">
+                    <div class="tech-card p-5">
+                        <span class="mono text-cyan-500 text-[10px] block mb-2">NODE_01</span>
+                        <h3 class="text-white font-bold text-sm">SAP ERP Modules Integration</h3>
+                    </div>
+                    <div class="tech-card p-5">
+                        <span class="mono text-cyan-500 text-[10px] block mb-2">NODE_02</span>
+                        <h3 class="text-white font-bold text-sm">Data Lake Analytics Cloud</h3>
+                    </div>
+                    <div class="tech-card p-5">
+                        <span class="mono text-cyan-500 text-[10px] block mb-2">NODE_03</span>
+                        <h3 class="text-white font-bold text-sm">MLOps Delivery Framework</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section class="space-y-6 pt-10 border-t border-zinc-900">
+                <h2 class="mono text-cyan-500 text-xs font-bold tracking-widest">REFLECTIVE_DATA_LOG</h2>
+                <div class="space-y-6 text-sm italic text-zinc-400 leading-relaxed">
+                    <p>
+                        "The talk highlighted the importance of modular systems like SAP and the complexity of managing global data through multi-cloud environments."
+                    </p>
+                    <p>
+                        "This session gave me insights into how large organizations bridge the gap between industrial operations and high-end digital infrastructure."
+                    </p>
+                </div>
+            </section>
+        </div>
     </main>
+
+    <footer class="p-8 text-center text-zinc-800 mono text-[8px] tracking-[1em]">
+        SYSTEM_ID: HAZIM_MUDA // SECP1513_LOG_01
+    </footer>
 
 </body>
 </html>

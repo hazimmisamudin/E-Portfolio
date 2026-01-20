@@ -3,78 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOG_04 | Legacy Hardware Integration</title>
+    <title>LOG_04 | Hardware Gallery</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
     <style>
         :root { --neon: #00f2ff; --bg: #050505; }
         body { font-family: 'Space Grotesk', sans-serif; background-color: var(--bg); color: #e2e8f0; }
         .mono { font-family: 'Fira Code', monospace; }
-        .cyber-border { border: 1px solid rgba(0, 242, 255, 0.2); }
-        .terminal-header { background: #111; border-bottom: 1px solid #333; }
+        .img-frame { border: 1px solid rgba(0, 242, 255, 0.2); transition: all 0.3s; filter: grayscale(50%); }
+        .img-frame:hover { border-color: var(--neon); filter: grayscale(0%); transform: scale(1.02); }
+        .component-label { background: var(--neon); color: black; font-weight: 800; font-size: 10px; padding: 2px 8px; }
     </style>
 </head>
-<body class="min-h-screen p-6">
+<body class="min-h-screen p-6 md:p-12">
 
-    <nav class="max-w-4xl mx-auto flex justify-between items-center py-4 mb-10 border-b border-zinc-900">
-        <span class="mono text-xs text-cyan-500 text-uppercase italic">ACADEMIC_LOG // 04</span>
-        <a href="../index.html" class="mono text-xs border border-cyan-500/50 px-6 py-2 hover:bg-cyan-400 hover:text-black transition uppercase tracking-widest font-bold">
-            RETURN
+    <nav class="max-w-6xl mx-auto flex justify-between items-center mb-12 border-b border-zinc-900 pb-6">
+        <div class="mono text-[10px] text-zinc-500 uppercase tracking-widest">Hardware_Module // Visual_Evidence</div>
+        <a href="../index.html" class="mono text-[10px] text-cyan-500 hover:tracking-[0.2em] transition-all uppercase font-black">
+            [ EXIT ]
         </a>
     </nav>
 
-    <main class="max-w-4xl mx-auto space-y-10">
-        <header>
-            <h1 class="text-4xl font-bold text-white mb-2">Hardware Audit: <span class="text-cyan-400 italic">Legacy System Restoration</span></h1>
-            <p class="mono text-[10px] text-zinc-500 uppercase tracking-widest">Subject: Technology & Information System</p>
+    <main class="max-w-6xl mx-auto space-y-16">
+        
+        <header class="text-center md:text-left">
+            <h1 class="text-6xl font-black text-white mb-4 tracking-tighter italic uppercase">PC_ASSEMBLE<br><span class="text-cyan-500 text-4xl underline decoration-zinc-800">Visual_Audit</span></h1>
         </header>
 
-        <div class="cyber-border bg-zinc-950 p-10 text-center">
-            <p class="mono text-[10px] text-zinc-500 mb-6 uppercase tracking-widest">Hardware_Maintenance_Visuals</p>
-            <a href="LINK_DRIVE_ANDA" target="_blank" class="inline-block border border-cyan-400 text-cyan-400 px-10 py-4 hover:bg-cyan-400 hover:text-black transition-all font-bold tracking-widest text-sm">
-                VIEW_MAINTENANCE_LOG.EXE
-            </a>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <section class="cyber-border bg-zinc-950/50 p-6">
-                <h2 class="mono text-cyan-400 text-xs mb-4">// EXECUTION_SUMMARY</h2>
-                <p class="text-sm text-zinc-400 leading-relaxed">
-                    Physical deconstruction and re-integration of a legacy workstation (Circa 2013). This operation focused on component identification, system maintenance, and verifying hardware integrity to ensure functional stability for educational purposes.
-                </p>
-            </section>
-
-            <section class="cyber-border bg-zinc-950/50 p-6">
-                <h2 class="mono text-cyan-400 text-xs mb-4">// KEY_NODES</h2>
-                <ul class="mono text-[10px] space-y-2 text-zinc-300">
-                    <li class="flex items-center gap-2"><span class="text-cyan-500">></span> Systematic Hardware Deconstruction</li>
-                    <li class="flex items-center gap-2"><span class="text-cyan-500">></span> Legacy Component Identification</li>
-                    <li class="flex items-center gap-2"><span class="text-cyan-500">></span> Internal Dust Clearance & Airflow Optimization</li>
-                    <li class="flex items-center gap-2"><span class="text-cyan-500">></span> Secure Hardware Re-integration</li>
-                </ul>
-            </section>
-        </div>
-
-        <section class="cyber-border bg-zinc-950/80 p-8 relative overflow-hidden">
-            <div class="terminal-header -m-8 mb-6 p-2 flex gap-1.5 px-4">
-                <div class="w-2.5 h-2.5 rounded-full bg-red-500/50"></div>
-                <div class="w-2.5 h-2.5 rounded-full bg-yellow-500/50"></div>
-                <div class="w-2.5 h-2.5 rounded-full bg-green-500/50"></div>
-            </div>
-            <h2 class="mono text-white text-sm mb-4">REFLECTIVE_DATA_LOG:</h2>
-            <div class="space-y-4 text-sm leading-relaxed text-zinc-300 italic">
-                <p>
-                    "<span class="text-cyan-400 font-bold">What I Gained:</span> This task provided hands-on experience in deconstructing and reassembling a workstation. I learned that even with older hardware, systematic handling is crucial to prevent damage to sensitive components and to maintain system longevity."
-                </p>
-                <p>
-                    "<span class="text-cyan-400 font-bold">Future Impact:</span> Dealing with legacy systems is a common scenario in Network Security. Understanding how older hardware operates helps me identify potential hardware-level vulnerabilities and teaches me the importance of maintaining system integrity through proper physical handling."
-                </p>
+        <section class="space-y-6">
+            <h2 class="mono text-cyan-400 text-xs font-bold tracking-[0.3em] uppercase">// PHOTO_EVIDENCE_LOG</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="space-y-2">
+                    <img src="PC Assemble Lab 1.png" alt="Lab 1" class="w-full h-48 object-cover img-frame">
+                    <span class="mono text-[8px] text-zinc-500 uppercase tracking-widest">IMG_001: Component_Inspection</span>
+                </div>
+                <div class="space-y-2">
+                    <img src="PC Assemble Lab 2.png" alt="Lab 2" class="w-full h-48 object-cover img-frame">
+                    <span class="mono text-[8px] text-zinc-500 uppercase tracking-widest">IMG_002: PSU_Integration</span>
+                </div>
+                <div class="space-y-2">
+                    <img src="PC Assemble Lab 3.png" alt="Lab 3" class="w-full h-48 object-cover img-frame">
+                    <span class="mono text-[8px] text-zinc-500 uppercase tracking-widest">IMG_003: Memory_Seating</span>
+                </div>
+                <div class="space-y-2">
+                    <img src="PC Assemble Lab 4.jpg" alt="Lab 4" class="w-full h-48 object-cover img-frame">
+                    <span class="mono text-[8px] text-zinc-500 uppercase tracking-widest">IMG_004: Final_Configuration</span>
+                </div>
             </div>
         </section>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+            <div class="lg:col-span-7">
+                <div class="border border-dashed border-zinc-800 p-8 relative">
+                    <span class="absolute -top-3 left-6 component-label uppercase">Task_Description</span>
+                    <p class="text-sm text-zinc-400 leading-relaxed italic mt-4">
+                        A hands-on practical involving the systematic dismantling and reassembling of a desktop CPU. Focused on basic maintenance and understanding internal hardware layout.
+                    </p>
+                    <ul class="mt-8 space-y-3 mono text-[10px] text-zinc-500">
+                        <li class="flex items-center gap-2"><span class="text-cyan-500">></span> PSU_REMOVAL_SUCCESSFUL</li>
+                        <li class="flex items-center gap-2"><span class="text-cyan-500">></span> RAM_CLEANING_COMPLETED</li>
+                        <li class="flex items-center gap-2"><span class="text-cyan-500">></span> COOLING_FAN_MAINTENANCE</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="lg:col-span-5 bg-zinc-950/50 p-8 border border-zinc-900">
+                <h2 class="mono text-white text-xs font-bold mb-6 uppercase tracking-widest border-b border-zinc-800 pb-4">Personal_Log</h2>
+                <div class="space-y-6 text-xs text-zinc-400 italic leading-relaxed">
+                    <p>
+                        "Identifying parts like the PSU and RAM was a valuable experience. Handling old hardware requires patience to ensure all connectors are properly aligned."
+                    </p>
+                    <p class="text-cyan-500/80">
+                        // Status: Hardware_Functional_Ver_2013.0
+                    </p>
+                </div>
+            </div>
+        </div>
     </main>
 
-    <footer class="mt-20 py-8 text-center text-zinc-600 text-[10px] mono">
-        &copy; 2026 // HAZIM_MUDA // LEGACY_SYSTEMS_LOG
+    <footer class="mt-20 py-8 text-center text-zinc-800 mono text-[8px] tracking-[1.5em] uppercase">
+        Hardware_Audit // Hazim_Muda // SECP1513
     </footer>
 
 </body>

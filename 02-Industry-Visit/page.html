@@ -3,78 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOG_02 | Industry Visit UTMDigital</title>
+    <title>LOG_02 | UTMDigital Infrastructure</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
     <style>
         :root { --neon: #00f2ff; --bg: #050505; }
         body { font-family: 'Space Grotesk', sans-serif; background-color: var(--bg); color: #e2e8f0; }
         .mono { font-family: 'Fira Code', monospace; }
-        .cyber-border { border: 1px solid rgba(0, 242, 255, 0.2); }
-        .terminal-header { background: #111; border-bottom: 1px solid #333; }
+        .dashboard-card { background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 242, 255, 0.1); }
+        .stat-glow { box-shadow: 0 0 15px rgba(0, 242, 255, 0.1); }
+        /* Style untuk video supaya nampak fit dalam skrin */
+        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border: 1px solid rgba(0, 242, 255, 0.3); }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
     </style>
 </head>
-<body class="min-h-screen p-6">
+<body class="min-h-screen p-6 md:p-12">
 
-    <nav class="max-w-4xl mx-auto flex justify-between items-center py-4 mb-10 border-b border-zinc-900">
-        <span class="mono text-xs text-cyan-500 text-uppercase italic">ACADEMIC_LOG // 02</span>
-        <a href="../index.html" class="mono text-xs border border-cyan-500/50 px-6 py-2 hover:bg-cyan-400 hover:text-black transition uppercase tracking-widest font-bold">
-            RETURN
+    <nav class="max-w-6xl mx-auto flex flex-wrap justify-between items-center gap-6 mb-16">
+        <div class="flex gap-10">
+            <div>
+                <span class="block mono text-[10px] text-zinc-500 uppercase">System_Status</span>
+                <span class="text-cyan-400 font-bold tracking-widest text-sm">ONLINE</span>
+            </div>
+            <div>
+                <span class="block mono text-[10px] text-zinc-500 uppercase">Access_Level</span>
+                <span class="text-white font-bold tracking-widest text-sm">ADMIN_HAZIM</span>
+            </div>
+        </div>
+        <a href="../index.html" class="border border-zinc-800 px-6 py-2 text-xs mono text-zinc-400 hover:border-cyan-500 hover:text-cyan-400 transition-all">
+            RETURN_TO_BASE
         </a>
     </nav>
 
-    <main class="max-w-4xl mx-auto space-y-10">
-        <header>
-            <h1 class="text-4xl font-bold text-white mb-2">Industrial Visit: <span class="text-cyan-400 italic">UTMDigital</span></h1>
-            <p class="mono text-[10px] text-zinc-500 uppercase tracking-widest">Subject: Technology & Information System</p>
-        </header>
-
-        <div class="cyber-border bg-zinc-950 p-10 text-center">
-            <p class="mono text-[10px] text-zinc-500 mb-6 uppercase tracking-widest">Cloud_Storage_Access</p>
-            <a href="LINK_DRIVE_ANDA_DI_SINI" target="_blank" class="inline-block border border-cyan-400 text-cyan-400 px-10 py-4 hover:bg-cyan-400 hover:text-black transition-all font-bold tracking-widest text-sm">
-                OPEN_EXTERNAL_PDF.EXE
-            </a>
+    <main class="max-w-6xl mx-auto">
+        
+        <div class="text-center mb-16">
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-4 tracking-tighter uppercase">
+                UTM<span class="text-cyan-500">Digital</span>
+            </h1>
+            <p class="mono text-xs text-zinc-500 tracking-[0.5em] uppercase italic">// Campus Network & Digital Transformation</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <section class="cyber-border bg-zinc-950/50 p-6">
-                <h2 class="mono text-cyan-400 text-xs mb-4">// EXECUTION_SUMMARY</h2>
-                <p class="text-sm text-zinc-400 leading-relaxed">
-                    Investigation of UTMDigital's core role in managing the university's massive ICT infrastructure. This visit focused on how the department drives digital transformation across the campus to support high-performance academic and administrative operations.
-                </p>
-            </section>
-
-            <section class="cyber-border bg-zinc-950/50 p-6">
-                <h2 class="mono text-cyan-400 text-xs mb-4">// KEY_NODES</h2>
-                <ul class="mono text-[10px] space-y-2 text-zinc-300">
-                    <li class="flex items-center gap-2"><span class="text-cyan-500">></span> Campus Network Architecture</li>
-                    <li class="flex items-center gap-2"><span class="text-cyan-500">></span> Digital Service Management</li>
-                    <li class="flex items-center gap-2"><span class="text-cyan-500">></span> ICT Governance & Policy</li>
-                    <li class="flex items-center gap-2"><span class="text-cyan-500">></span> System Integration & Maintenance</li>
-                </ul>
-            </section>
-        </div>
-
-        <section class="cyber-border bg-zinc-950/80 p-8 relative overflow-hidden">
-            <div class="terminal-header -m-8 mb-6 p-2 flex gap-1.5 px-4">
-                <div class="w-2.5 h-2.5 rounded-full bg-red-500/50"></div>
-                <div class="w-2.5 h-2.5 rounded-full bg-yellow-500/50"></div>
-                <div class="w-2.5 h-2.5 rounded-full bg-green-500/50"></div>
-            </div>
-            <h2 class="mono text-white text-sm mb-4">REFLECTIVE_DATA_LOG:</h2>
-            <div class="space-y-4 text-sm leading-relaxed text-zinc-300 italic font-light">
-                <p>
-                    "<span class="text-cyan-400 font-bold">What I Gained:</span> I learned about the sheer complexity involved in managing a large-scale enterprise network for a university. It highlighted that ICT is not just about systems, but about resilience, constant innovation, and supporting the growth of the academic community."
-                </p>
-                <p>
-                    "<span class="text-cyan-400 font-bold">Future Impact:</span> This experience bridged the gap between classroom theory and real-world application. Understanding how network security and data management are applied in an organization like UTMDigital helps me plan my career path as a Network Security specialist more effectively."
-                </p>
+        <section class="max-w-4xl mx-auto mb-12">
+            <h2 class="mono text-cyan-400 text-xs font-bold mb-4 uppercase tracking-widest text-center">// SYSTEM_VLOG_STREAM</h2>
+            <div class="video-container stat-glow">
+                <div class="video-container stat-glow" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+    <iframe 
+        src="https://www.youtube.com/embed/Or6FMdOeH3U" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+    </iframe>
+</div>
             </div>
         </section>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+            
+            <div class="lg:col-span-8 dashboard-card p-8">
+                <div class="flex justify-between items-start mb-6 border-b border-zinc-900 pb-4">
+                    <h2 class="mono text-cyan-400 text-xs font-bold uppercase tracking-widest">// EXECUTION_SUMMARY</h2>
+                    <span class="mono text-[10px] text-zinc-600 font-bold">LOG_TYPE: VISIT_01</span>
+                </div>
+                <p class="text-sm text-zinc-400 leading-relaxed italic">
+                    Investigation of UTMDigital's core role in managing the university's massive ICT infrastructure. The visit focused on how digital transformation supports academic excellence through integrated campus-wide networks.
+                </p>
+                <div class="mt-10">
+                    <a href="LINK_DRIVE_ANDA" target="_blank" class="inline-block bg-cyan-500 text-black px-10 py-4 mono text-xs font-black hover:bg-white transition-all uppercase tracking-widest">
+                        ACCESS_DOCUMENTATION.PDF
+                    </a>
+                </div>
+            </div>
+
+            <div class="lg:col-span-4 dashboard-card p-8">
+                <h2 class="mono text-cyan-400 text-xs font-bold mb-6 uppercase tracking-widest">// INFRA_NODES</h2>
+                <div class="space-y-4">
+                    <div class="border-l-2 border-cyan-500 pl-4 py-1">
+                        <h3 class="text-white text-[11px] font-bold uppercase">Campus Network Architecture </h3>
+                    </div>
+                    <div class="border-l-2 border-zinc-800 pl-4 py-1">
+                        <h3 class="text-zinc-500 text-[11px] font-bold uppercase">Digital Service Management </h3>
+                    </div>
+                    <div class="border-l-2 border-zinc-800 pl-4 py-1">
+                        <h3 class="text-zinc-500 text-[11px] font-bold uppercase">ICT Governance & Policy </h3>
+                    </div>
+                    <div class="border-l-2 border-zinc-800 pl-4 py-1">
+                        <h3 class="text-zinc-500 text-[11px] font-bold uppercase">System Integration </h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="dashboard-card p-8 border-t-2 border-t-cyan-500/50">
+                    <h3 class="mono text-cyan-400 text-[10px] font-bold mb-4 uppercase">// KNOWLEDGE_ACQUIRED</h3>
+                    <p class="text-xs text-zinc-400 italic leading-relaxed">
+                        "I learned about the complexity of managing a large-scale enterprise network for a university, highlighting the importance of resilience and constant innovation."
+                    </p>
+                </div>
+                <div class="dashboard-card p-8 border-t-2 border-t-zinc-800">
+                    <h3 class="mono text-cyan-400 text-[10px] font-bold mb-4 uppercase">// CAREER_IMPACT</h3>
+                    <p class="text-xs text-zinc-400 italic leading-relaxed">
+                        "Understanding how network security and data management are applied in organizations like UTMDigital helps me plan my career path as a Network Security specialist."
+                    </p>
+                </div>
+            </div>
+
+        </div>
     </main>
 
-    <footer class="mt-20 py-8 text-center text-zinc-600 text-[10px] mono">
-        &copy; 2026 // HAZIM_MUDA // SECURED_LOG
+    <footer class="mt-20 py-8 text-center text-zinc-800 mono text-[8px] tracking-[1.5em] uppercase">
+        Secure_Data_Stream // Hazim_Muda // UTM_JB
     </footer>
 
 </body>
